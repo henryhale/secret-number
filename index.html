@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en" class="w3-white">
+<head>
+	<!-- META ============================================= -->
+	<meta charset="utf-8">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+
+	<!-- PAGE TITLE HERE ============================================= -->
+	<title> SECRET NUMBER </title>
+	
+	<!-- MOBILE SPECIFIC ============================================= -->
+  	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no">
+
+    <!-- FAVICONS ICON ============================================= -->
+    <link rel="icon" href="favicon.png" type="image/x-icon" />
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.png" />
+    <link rel="apple-touch-icon" sizes="64x64" href="favicon.png">
+
+  	<link rel="stylesheet" type="text/css" href="css/w3.css">
+  	<link rel="stylesheet" type="text/css" href="css/all.min.css">
+  	<link rel="stylesheet" type="text/css" href="css/animate-custom.css">
+  	<link rel="stylesheet" type="text/css" href="css/secret-number.css">
+
+</head>
+<body class="w3-sans-serif">
+
+	<!-- header -->
+	<div class="w3-block w3-top w3-white w3-bar w3-padding-16 w3-container" style="z-index: 2;">
+
+		<!-- name -->
+		<div class="w3-bar-item">
+			<span class="w3-large">
+				<i class="fa fa-archive"></i>
+				<b>Number X</b>
+			</span>
+		</div>
+
+		<!-- link -->
+		<a class="w3-bar-item w3-right w3-border w3-round w3-hover-light-grey" href="#">
+			<i class="fa fa-globe"></i>
+			<span class="w3-hide-small">&nbsp;Portifolio</span>
+		</a>
+
+		<div class="w3-clear"></div>
+
+	</div>
+	<!-- /header -->
+
+	<!-- body -->
+	<div class="w3-block w3-container game-body">
+		
+		<!--  intro -->
+		<div class="w3-block w3-padding-16 w3-center w3-animate-opacity notes-intro" style="display: block;" id="introView">
+			<span class="w3-block w3-padding-24">
+				<i class="fa fa-spin fa-spinner fa-2x"></i>
+			</span>
+			<span class="w3-block w3-padding-16">
+				Loading...
+			</span>
+		</div>
+		<!-- / intro -->
+
+		<!-- full width on mobile -->
+		<div class="w3-mobile" id="gameBox" style="display: none;">
+			<!-- main area -->
+			<div class="w3-bar-block w3-mobile w3-round-large">
+				<!-- game status -->
+				<div class="w3-center w3-bar w3-block">
+						<div class="w3-left w3-padding game-trials">
+							<span class="w3-sans-serif">Chances&nbsp;</span>
+							<span class="w3-tag w3-round-large w3-large" id="chances">0</span>
+						</div>
+						<div class="w3-right w3-padding game-score">
+							<span class="w3-hide-small w3-sans-serif">Score&nbsp;</span>
+							<span class=""><b id="scoreNumber">0</b></span>
+						</div>
+						<div class="w3-clear"></div>
+				</div>
+				<!-- game display -->
+				<div class="w3-bar-item w3-center w3-padding-24">
+					<h3> What is Number X? </h3>
+				</div>
+				<!-- game body -->
+				<div class="w3-bar-item">
+					<div class="w3-row w3-center">
+						<!-- min number -->
+						<div class="w3-col s4">
+							<h1 id="minimumNumber" class="w3-padding-16 w3-round-large" style="width: 75px;margin: 0 auto">0</h1>
+						</div>
+						<!-- number x -->
+						<div class="w3-col s4">
+							<h1 class="animated  w3-black w3-padding-16 w3-round-large" style="min-width: 75px;margin: 0 auto">X</h1>
+						</div>
+						<!-- max number -->
+						<div class="w3-col s4">
+							<h1 id="maximumNumber" class="w3-padding-16 w3-round-large" style="width: 75px;margin: 0 auto">0</h1>
+						</div>
+					</div>
+				</div>
+				<!-- game text -->
+				<div class="w3-bar-item w3-center" id="statusBox">
+					<img src="img/thinking.gif" style="width: 50px;height:50px">
+					<div class="w3-show-inline-block">X is just a number</div>
+				</div>
+				<!-- input field -->
+				<div class="w3-bar-item w3-padding-16">
+					<!-- takes the guess -->
+					<input id="guessNumber" class="w3-input w3-large w3-center  w3-mobile w3-border-0 w3-round-large w3-light-card-inset" placeholder="Enter your guess..." max="1000" min="0" type="number" name="" style="width: 75%;margin: 0 auto">
+
+				</div>
+				<!-- game check -->
+				<div class="w3-bar-item w3-center w3-padding-16 w3-margin-bottom">
+					<!-- game on / over -->
+					<button id="submitGuess" class="w3-button w3-mobile w3-large w3-white w3-border w3-border-black w3-round w3-hover-black w3-light-card-1"  style="width: 50%;margin: 0 auto">CHECK</button>
+
+				</div>
+			</div>	
+		</div>
+
+	</div>
+
+	<script type="text/javascript" src="js/secret-number.js"></script>
+	
+</body>
+</html>
