@@ -1,6 +1,6 @@
 
 
-		var xNumber = new Object();
+		let xNumber = new Object();
 		xNumber = {
 			_chances : 5,
 			_scope : 20,
@@ -326,8 +326,8 @@
 		});
 
 
-		var checkMyGuess = document.querySelector('#submitGuess');
-		var guessNumber = document.querySelector('#guessNumber');
+		let checkMyGuess = document.querySelector('#submitGuess');
+		let guessNumber = document.querySelector('#guessNumber');
 		if (checkMyGuess && guessNumber) {
 			checkMyGuess.addEventListener('click',function () {
 				xNumber.confirmGuess(guessNumber.value);
